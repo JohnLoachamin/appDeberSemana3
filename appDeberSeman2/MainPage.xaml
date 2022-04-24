@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="appDeberSeman2.MainPage">
+    <ScrollView>
+
+        <StackLayout>
+            <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+                <Label Text="Deber Semana 2!" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+            </Frame>
+            <Label Text="Calculadora de calificaciones" FontSize="Title" Padding="30,10,30,10"/>
+            <Image Source="https://jorzgz0iptpc.cdn.shift8web.com/wp-content/uploads/2018/01/LOGO-UISRAEL-768x209.png" Margin="0,30,0,20"></Image>
+
+            <Grid Padding="30,10,30,10">
+
+                <Grid.RowDefinitions>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+
+                <Label Grid.Row="0" Grid.Column="0" Text="Nota de segimiento 1:"></Label>
+                <Entry Grid.Row="0" Grid.Column="1" x:Name="txtNotaSegui1" Keyboard="Numeric" Placeholder="Ej.:10" PropertyChanged="txtNotaSegui1_PropertyChanged"></Entry>
+                <Label Grid.Row="1" Grid.Column="0" Text="Exámen 1"></Label>
+                <Entry Grid.Row="1" Grid.Column="1" x:Name="txtExamen1" Keyboard="Numeric" Placeholder="Ej.:10" PropertyChanged="txtExamen1_PropertyChanged"></Entry>
+              
+                <Label Text="------" ></Label>
+                <Label Grid.Row="2" Grid.Column="0" Text="Nota de segimiento 2:"></Label>
+                <Entry Grid.Row="2" Grid.Column="1" x:Name="txtNotaSegui2" Keyboard="Numeric" Placeholder="Ej.:10" PropertyChanged="txtNotaSegui2_PropertyChanged"></Entry>
+                <Label Grid.Row="3" Grid.Column="0" Text="Exámen 2"></Label>
+                <Entry Grid.Row="3" Grid.Column="1" x:Name="txtExamen2" Keyboard="Numeric" Placeholder="Ej.:10" PropertyChanged="txtExamen2_PropertyChanged"></Entry>
+
+
+            </Grid>
+            <Button Text="Calcular" Grid.Row="7" Grid.Column="1" Clicked="Button_Clicked" BackgroundColor="#2196F3" CornerRadius="12" TextColor="white" Margin="30,20,30,5"></Button>
+            <Grid Padding="30,10,30,10">
+
+                <Grid.RowDefinitions>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+
+                <Label Grid.Row="0" Grid.Column="0" Text="Nota Parcial1"></Label>
+                <Entry Grid.Row="0" Grid.Column="1" x:Name="txtNotaParcial1" IsReadOnly="True" Keyboard="Numeric"></Entry>
+                <Label Grid.Row="1" Grid.Column="0" Text="Nota Parcial2"></Label>
+                <Entry Grid.Row="1" Grid.Column="1" x:Name="txtNotaParcial2" IsReadOnly="True" Keyboard="Numeric"></Entry>
+                <Label Grid.Row="2" Grid.Column="0" Text="Resultado"></Label>
+                <Entry Grid.Row="2" Grid.Column="1" x:Name="txtResultado" IsReadOnly="True" Keyboard="Numeric"></Entry>
+                <Label Grid.Row="3" Grid.Column="0" Text="Estado"></Label>
+                <Entry Grid.Row="3" Grid.Column="1" x:Name="txtEstado"  ></Entry>
+
+            </Grid>
+        </StackLayout>
+
+    </ScrollView>
+
+    
+
+</ContentPage>
